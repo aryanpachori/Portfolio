@@ -61,7 +61,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Team Chat Applicationt",
+    title: "Team Chat Application",
     description:
       "A team chat application for modern, real-time, and responsive communication platform for teams.",
     tags: ["React", "TypeScript", "Next.js", "MYSQL", "Tailwind", "Prisma"],
