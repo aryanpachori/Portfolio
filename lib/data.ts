@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaSchool } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import TeamChatApplicationImg from "@/public/TeamChatApplication.png"
 import ExpenseCalculatorImg from "@/public/ExpenseCalculator.png"
