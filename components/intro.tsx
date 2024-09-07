@@ -58,10 +58,11 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]  sm:text-3xl"
       >
         <span className="font-bold">Hello, I&apos;m Aryan.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer</span> with a strong
-        foundation in both front-end and back-end technologies. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My primary focus is{" "}
-        <span className="underline">React (Next.js)</span>
+<span className="font-bold">full-stack developer</span> with a strong
+foundation in both front-end and back-end technologies. I enjoy building{" "}
+<span className="italic">sites & apps</span> and have a keen interest in{" "}
+<span className="underline">Web3 technologies</span>, particularly in{" "}
+<span className="font-bold">Solana</span>. 
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

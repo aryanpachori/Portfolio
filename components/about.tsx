@@ -17,28 +17,29 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3 ">
-        I&apos;m,a passionate and driven third-year computer science student at{" "}
-        <span className="font-medium">VIT Bhopal</span>, I am proficient in a
-        variety of technologies crucial for{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect.Committed to delivering efficient and engaging{" "}
-        <span className="underline">web applications</span>. My core stack is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am presently seeking a{" "}
-        <span className="font-medium">role</span> as a software developer.
-      </p>
-      <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and gymming. I also enjoy{" "}
-        <span className="font-medium">reading books</span>. I am currently
-        reading <span className="font-medium">Think like a monk </span>by author
-        Jay Shetty.
-      </p>
+      <p className="mb-3">
+  I’m a passionate and driven third-year computer science student at{" "}
+  <span className="font-medium">VIT Bhopal</span>. I am proficient in a
+  variety of technologies crucial for{" "}
+  <span className="font-medium">full-stack web development</span>.{" "}
+  <span className="italic">My favorite part of programming</span> is the
+  problem-solving aspect. I am committed to delivering efficient and engaging{" "}
+  <span className="underline">web applications</span>. My core stack includes{" "}
+  <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>.
+  I am also familiar with TypeScript and Prisma. I am currently diving into{" "}
+  <span className="font-medium">Web3 technologies</span>, with a particular focus
+  on developing decentralized applications (dApps) on the{" "}
+  <span className="font-medium">Solana</span> blockchain. I am constantly
+  seeking to expand my knowledge and skills in new technologies and am looking
+  for a <span className="font-medium">role</span> as a software developer.
+</p>
+<p>
+  <span className="italic">Outside of coding</span>, I enjoy playing video
+  games, watching movies, and working out. I also have a keen interest in{" "}
+  <span className="font-medium">reading</span>.
+</p>
+
+
     </motion.section>
   );
 }
