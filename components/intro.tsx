@@ -88,7 +88,7 @@ foundation in both front-end and back-end technologies. I enjoy building{" "}
         <a
           className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full utline-none
            focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10"
-          href="/CV.pdf"
+          href="/aryan_resume_2026.pdf"
           download
         >
           Download CV{" "}
@@ -98,7 +98,7 @@ foundation in both front-end and back-end technologies. I enjoy building{" "}
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full 
         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
-        href="https://www.linkedin.com/in/aryan-pachori-251747217/" target="_blank"
+        href="https://www.linkedin.com/in/aryan-pachori" target="_blank"
         >
           <BsLinkedin />
         </a>
