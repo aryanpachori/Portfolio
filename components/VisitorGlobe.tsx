@@ -112,7 +112,12 @@ export default function VisitorGlobe() {
   );
 
   const ringColor = useCallback(
-    () => (t: number) => `rgba(148,137,121,${1 - t})`,
+    () => (t: number) => `rgba(74,222,128,${1 - t})`,
+    []
+  );
+
+  const pointColor = useCallback(
+    (d: any) => (d.country === "IN" ? "#DFD0B8" : "#4ade80"),
     []
   );
 
@@ -167,12 +172,19 @@ export default function VisitorGlobe() {
           hexPolygonMargin={0.4}
           hexPolygonColor={hexColor}
           hexPolygonLabel={hexLabel}
+          pointsData={visitorPoints}
+          pointLat="lat"
+          pointLng="lng"
+          pointColor={pointColor}
+          pointAltitude={0.01}
+          pointRadius={0.4}
+          pointsMerge={false}
           ringsData={visitorPoints.filter((v) => v.count > 0)}
           ringLat="lat"
           ringLng="lng"
-          ringMaxRadius={3}
-          ringPropagationSpeed={1}
-          ringRepeatPeriod={1500}
+          ringMaxRadius={4}
+          ringPropagationSpeed={1.5}
+          ringRepeatPeriod={1200}
           ringColor={ringColor}
           ringAltitude={0.005}
         />
