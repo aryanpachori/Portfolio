@@ -10,10 +10,10 @@ const DEV_MOCK = [
 ]
 
 function getRedis() {
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-    return null
-  }
-  return Redis.fromEnv()
+  const url = process.env.KV_REST_API_URL
+  const token = process.env.KV_REST_API_TOKEN
+  if (!url || !token) return null
+  return new Redis({ url, token })
 }
 
 // GET — return all visitor country counts
