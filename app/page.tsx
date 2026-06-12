@@ -1,23 +1,19 @@
+import Hero from "@/components/Hero";
+import TechStack from "@/components/TechStack";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 import About from "@/components/about";
-import Achievements from "@/components/achievements";
 import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro/>
-      <SectionDivider/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <Achievements/>
-      <Contact/>
-    </main>
-  )
+    <>
+      <Hero />
+      <TechStack />
+      <Projects />
+      <Experience />
+      <About />
+      <Contact />
+    </>
+  );
 }

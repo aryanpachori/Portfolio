@@ -2,12 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap');
+
+:root {
+  --bg-primary: #222831;
+  --bg-secondary: #393E46;
+  --accent: #948979;
+  --text-primary: #DFD0B8;
+  --text-muted: #9A9A9A;
+  --text-inverse: #222831;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --line-color: rgba(255, 255, 255, 0.15);
+}
+
 html {
-  --line-color: #e5e7eb;
+  scroll-behavior: smooth;
 }
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
 }
+
 .borderBlack {
   @apply border border-black/10;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Globe */
+.globe-loader {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid #393E46;
+  border-top-color: #948979;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.globe-container canvas {
+  border-radius: 50% !important;
+}
+
+.scene-tooltip {
+  font-family: 'JetBrains Mono' !important;
+  font-size: 11px !important;
+  background: #222831 !important;
+  border: 1px solid #393E46 !important;
+  color: #DFD0B8 !important;
+  border-radius: 0 !important;
+  padding: 4px 10px !important;
 }

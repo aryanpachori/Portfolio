@@ -1,41 +1,48 @@
-import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import {  Toaster } from "react-hot-toast";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
+import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
+import ScrollProgress from "@/components/ScrollProgress";
+import LoadingScreen from "@/components/LoadingScreen";
+import VisitorTracker from "@/components/VisitorTracker";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Aryan | Personal Portfolio",
-  description: "Full-stack developer",
+export const metadata: Metadata = {
+  title: "Aryan Pachori — Backend & AI Engineer",
+  description:
+    "Backend and AI engineer building distributed systems, Kafka microservices, and LLM-powered infrastructure. Open to remote roles.",
+  metadataBase: new URL("https://aryanpachori.live"),
+  alternates: { canonical: "https://aryanpachori.live" },
+  openGraph: {
+    title: "Aryan Pachori — Backend & AI Engineer",
+    description:
+      "Backend and AI engineer building distributed systems, Kafka microservices, and LLM-powered infrastructure.",
+    url: "https://aryanpachori.live",
+    siteName: "Aryan Pachori",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aryan Pachori — Backend & AI Engineer",
+    description:
+      "Backend and AI engineer building distributed systems, Kafka microservices, and LLM-powered infrastructure.",
+    images: ["/og-image.png"],
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative  pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10  right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] 
-        sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] 
-        sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-        <ThemeContextProvider>
-        <ActiveSectionContextProvider>
-        <Header/>
-        {children}
-        <Footer/>
-        <Toaster position="top-right"/>
-        <ThemeSwitch/>
-        </ActiveSectionContextProvider>
-        </ThemeContextProvider>
-        </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body style={{ backgroundColor: "var(--bg-primary)", color: "var(--text-primary)" }}>
+        <LoadingScreen />
+        <ScrollProgress />
+        <VisitorTracker />
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
