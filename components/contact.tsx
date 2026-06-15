@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Briefcase, Zap, Rocket, Building2 } from "lucide-react";
+import { Briefcase, Zap, Rocket } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { FaGithubSquare } from "react-icons/fa";
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 
@@ -395,7 +396,7 @@ export default function Contact() {
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text-primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
             >
-              <FiGithub size={20} />
+              <FaGithubSquare size={20} />
             </a>
             <a
               href="https://github.com/aryan-pachori-novostack"
@@ -408,7 +409,7 @@ export default function Contact() {
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text-primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
             >
-              <Building2 size={20} strokeWidth={1.75} />
+              <FiGithub size={20} />
             </a>
           </div>
         </div>
