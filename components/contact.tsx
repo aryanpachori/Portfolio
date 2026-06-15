@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Briefcase, Zap, Rocket } from "lucide-react";
+import { Briefcase, Zap, Rocket, Building2 } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
@@ -388,12 +388,27 @@ export default function Contact() {
               href="https://github.com/aryanpachori"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Personal GitHub"
+              title="Personal GitHub"
               data-cursor="hover"
               style={{ color: "var(--text-muted)", transition: "color 200ms", display: "flex" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text-primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
             >
               <FiGithub size={20} />
+            </a>
+            <a
+              href="https://github.com/aryan-pachori-novostack"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Company GitHub (Novostack)"
+              title="Novostack GitHub"
+              data-cursor="hover"
+              style={{ color: "var(--text-muted)", transition: "color 200ms", display: "flex" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text-primary)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
+            >
+              <Building2 size={20} strokeWidth={1.75} />
             </a>
           </div>
         </div>
