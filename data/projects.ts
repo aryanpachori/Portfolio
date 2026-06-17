@@ -13,7 +13,7 @@ export interface Project {
 export const FEATURED_PROJECTS: Project[] = [
   {
     id: "01",
-    name: "DriftLogg",
+    name: "Beacon",
     description:
       "Predictive dependency health SaaS — scores GitHub packages 0–100 using XGBoost, predicting abandonment 60–90 days ahead.",
     bullets: [
@@ -21,10 +21,10 @@ export const FEATURED_PROJECTS: Project[] = [
       "Real-time onboarding via Redis pub/sub + SSE with 90-day survival curves and AI migration recommendations.",
     ],
     tags: ["Node.js", "Python", "XGBoost", "BullMQ", "Redis", "PostgreSQL", "Next.js"],
-    liveUrl: "https://driftlogg.forgefastlabs.com",
-    githubUrl: "https://github.com/aryanpachori/driftlogg",
+    liveUrl: "https://beacon.forgefastlabs.com",
+    githubUrl: "https://github.com/aryanpachori/beacon",
     year: "2025",
-    image: "/projects/driftlogg.png",
+    image: "/projects/beacon.png",
   },
   {
     id: "02",

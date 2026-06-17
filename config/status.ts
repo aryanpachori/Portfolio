@@ -1,7 +1,7 @@
 export const currentStatus = {
-  building: "DriftLogg",
+  building: "Beacon",
   buildingDesc: "Predictive dependency health SaaS",
-  buildingUrl: "https://driftlogg.forgefastlabs.com",
+  buildingUrl: "https://beacon.forgefastlabs.com",
   available: true,
   lookingFor: "Remote backend / AI roles & contracts",
 };
