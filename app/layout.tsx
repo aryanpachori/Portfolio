@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ScrollProgress from "@/components/ScrollProgress";
 import LoadingScreen from "@/components/LoadingScreen";
 import VisitorTracker from "@/components/VisitorTracker";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Aryan Pachori — Backend & AI Engineer",
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <VisitorTracker />
         <Navbar />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );
